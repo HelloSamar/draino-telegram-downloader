@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Draino",
+  "version": "1.0.1",
+  "description": "Download full Telegram videos. Hover any video, click the green button.",
+  "permissions": [],
+  "host_permissions": ["https://web.telegram.org/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://web.telegram.org/*"],
+      "js": ["inject.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://web.telegram.org/*"],
+      "js": ["content.js"],
+      "css": ["overlay.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Draino",
+    "default_icon": { "16":"icons/icon16.png","32":"icons/icon32.png","48":"icons/icon48.png","128":"icons/icon128.png" }
+  },
+  "icons": { "16":"icons/icon16.png","32":"icons/icon32.png","48":"icons/icon48.png","128":"icons/icon128.png" }
+}

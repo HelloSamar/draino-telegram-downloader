@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>Draino</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:220px;font-family:'Segoe UI',system-ui,sans-serif;background:#fff;padding:13px;display:flex;flex-direction:column;gap:10px}
+.top{display:flex;align-items:center;gap:10px}
+.ico{width:34px;height:34px;background:#2AABEE;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 2px 8px rgba(42,171,238,.3)}
+.ico svg{width:18px;height:18px;stroke:#fff}
+.name{font-size:17px;font-weight:900;color:#2AABEE;letter-spacing:-.02em}
+.tag{font-size:10px;color:#229ED9;margin-top:1px}
+.status{display:flex;align-items:center;gap:7px;background:#f0f9ff;border:1px solid #bae6fd;border-radius:7px;padding:7px 9px}
+.dot{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 5px #22c55e88;flex-shrink:0}
+.dot.off{background:#ccc;box-shadow:none}
+.msg{font-size:11px;color:#0369a1;line-height:1.4}.msg b{color:#0c4a6e}
+</style></head><body>
+<div class="top">
+  <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/></svg></div>
+  <div><div class="name">Draino</div><div class="tag">Drain any Telegram video</div></div>
+</div>
+<div class="status"><div class="dot" id="dot"></div><div class="msg" id="msg"><b>Checking…</b></div></div>
+<script src="popup.js"></script>
+</body></html>
