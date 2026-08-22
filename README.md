@@ -1,4 +1,4 @@
-# Draino
+# Draino - Telegram downloader
 
 Download full-resolution Telegram videos straight from **web.telegram.org**.
 Hover any video, click the green button that appears, and Draino streams the
